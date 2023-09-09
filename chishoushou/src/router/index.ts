@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // @ts-ignore
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/home/index.vue'
 import {userInfoData} from "../stores/index";
 // @ts-ignore
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
-      component: HomeView
+      component: Home
     },
     {
       path:'/login',
