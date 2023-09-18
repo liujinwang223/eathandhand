@@ -50,7 +50,12 @@ const form = ref({
   name: '',
   post: '',
   isRead: false,
-});
+}); //提交所用的表单
+let staticUserList=[
+    {user:'杨洋',pwd:"123456"},
+    {user:'刘金旺',pwd:"123456"},
+    {user:'刘昴',pwd:"668668"},
+]
 // 登陆
 const handleSubmit=(data:any)=>{
   let user=form.value.name;
